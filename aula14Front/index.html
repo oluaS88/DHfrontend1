@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style3.css" href="">
+    <title>Aula12 - Formulário</title>
+</head>
+
+<body>
+  <h1>Convite para festa</h1>
+   <form>
+     
+      <fieldset>
+      <label for="nome" style="display: block ;">Qual seu nome?</label>
+      <input type="text" id="nome" required />
+
+   </fieldset>
+<fieldset>
+      <div>  
+        <label for="participar" style="display: block ;">Você pode participar?</label>
+        <input type="radio" name="participar" value="Sim" id="Sim" checked> <label for="Sim">Sim, participarei
+          <div></div>
+        <input type="radio" name="participar" value="Não" id="Não"> <label for="Não">Não participarei
+          <div></div>
+        </fieldset>
+        <fieldset>
+          <label for="pessoas" style="display: block ;">Quanstas pessoas participarão?</label>
+          <input type="number"/>
+        </fieldset>     
+       </div>
+
+      <div>
+        <fieldset>
+          <legend>O que você vai trazer?</legend>
+          <div>
+        <input type="checkbox" name="prato" id="pp"> <label for="pp">Prato principal
+          </div>
+        <input type="checkbox" name="prato" id="sd"> <label for="sd">Salada
+          <div>
+        <input type="checkbox" name="prato" id="sm"> <label for="sm">Sobremesa
+          </div>
+          <input type="checkbox" name="prato" id="bb"> <label for="bb">Bebidas
+            <div>
+          <input type="checkbox" name="prato" id="ac"> <label for="ac">Acompanhamentos/aperitivos
+            </div>
+          <input type="checkbox" name="prato" id="outro"> <label for="outro">Outro
+            <input type="text" name="prato"> <label for="outro"></label>       
+        </fieldset>  
+       
+       
+  <fieldset>
+    <legend>Você tem alguma alergia ou restrição alimentar?</legend>
+    <div>
+    <input type="text" name="email" id="email">
+    </div>    
+  </fieldset>
+
+  <fieldset>
+    <legend>Qual é seu endereço de e-mail?</legend>
+    <div>
+    <input type="email" name="email" id="email">
+    </div>    
+  </fieldset>
+       
+   <div></div>
+  <fieldset>
+    <legend>Enviar formulário:</legend>
+       <button type="submit">Enviar</button>
+       <button type="reset">Apagar</button>
+    </fieldset>  
+</body>
+</html>
