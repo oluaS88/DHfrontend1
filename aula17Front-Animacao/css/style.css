@@ -1,0 +1,49 @@
+main {
+    width: 1000px;
+    height: 1000px;
+}
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    opacity: 0%;
+}
+
+.circle:hover{
+    animation: rolar 0.5s normal;
+}
+
+
+@keyframes rolar {
+    0% {opacity: 0%;}
+    33% {opacity: 33%;}
+    66% {opacity: 66%; transform: translateX(350px);}
+    /* 60% {opacity: 60%; transform: translateX(250px);}
+    80% {opacity: 80%; transform: translateX(300px);} */
+    100% {opacity: 100%;}
+}
+
+img {
+    margin-top: 75px;
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+
+img:hover {
+    transform: scale(1.5) skew(150deg);
+}
+
+button {
+    margin-top: 75px;
+    background-color: blue;
+    padding: 10px;
+    color: white;
+    transition: color 1s, background-color 1s;
+}
+button:hover {
+    background-color: yellow;
+    color: black;
+    
+}
